@@ -1,2 +1,0 @@
-# gilangdeveloper.io
-gilangdeveloper.io
