@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+        [id*="nama"] {
+            font-family: cursive;
+            color: darkblue;
+        } 
+        #project:hover{
+            color: darkblue;
+            text-decoration:none ;
+        }
+        #project{
+            text-decoration:underline ;
+        }
+        [id*="Sosial Media"]:hover{
+            color: darkblue;
+            text-decoration:none ;
+        }
+        [id*="Sosial Media"]{
+            text-decoration:underline ;
+        }
+        [class*="card-img-top"] {
+            border-radius: 5px;
+            border: solid 1px transparent;
+        }
+        .card-img-top:hover{
+            border: solid 1px darkblue;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://telegra.ph/file/eb4d5b4481424481fd2a0.png" alt="" width="150px"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMoblieMenu"
+                aria-controls="toggleMoblieMenu" aria-expanded="false" aria-lable="Toggle navigation">
+                <i class="bi bi-list-ul"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMoblieMenu">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li>
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Sosial Media">Sosial Media</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h4 class="text">Halo 👋, <b id="nama">saya Gilang</b></h4>
+        <h2 class="text">Saya seorang Web Developer dari <b id="nama">Jawa Tengah, Indonesia</b>.</h2>
+    </div>
+    <div class="container mt-4">
+        <h4 id="project"><b>PROJECT</b></h4>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="#"><img
+                        src="https://telegra.ph/file/4a2ccbdb3b69589391a17.png"
+                        class="card-img-top" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h4 id="Sosial Media"><b>Sosial Media</b></h4>
+        <h4 class="">Sosial Media saya?</h4>
+        <div class="row g-3">
+            <div class="col-4">
+                <a href="" class="btn btn-light">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="" class="btn btn-light">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
