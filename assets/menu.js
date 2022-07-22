@@ -53,6 +53,8 @@ try {
 				tks = `<p style="color: black;">selamat hari ayah nasional</p>`;
 			} else if (/id|indonesia/.test(region) && date.getMonth() == 8 && date.getDate() == 17) {
 				tks = tks = `<p style="color: red;background: rgba(128,128,128,0.3);">Selamat hari kem<span style="color: white;">erdekaan Indonesia</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
+			} else {
+				tks = `<p style="color: gray;">Welcome to gilang api's</p>`;
 			}
 
 			Toast.fire({
