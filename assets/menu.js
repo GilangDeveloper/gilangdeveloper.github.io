@@ -15,7 +15,7 @@ try {
             if (iklanPending) {
                 iklanPending = false;
                 fetch('/iklan/gilangdev').then(resp => resp.json()).then(resp => {
-                    document.querySelector('#iklan_body').innerHTML = `<a target="_blank" style="color: white;" href="https://m.youtube.com/watch?v=${RegExp("/vi/(.*?)/").exec(resp.thumbnail)[1]}"><img alt="Subscribe Fikri Am" style="max-width: 100%" src="${resp.thumbnail}">
+                    document.querySelector('#iklan_body').innerHTML = `<a target="_blank" style="color: white;" href="https://m.youtube.com/watch?v=${RegExp("/vi/(.*?)/").exec(resp.thumbnail)[1]}"><img alt="Subscribe Fikri Am" style="width: 950px" src="${resp.thumbnail}">
 					<br>
 					${resp.title}<br>
 					<small>${resp.published}</small>
@@ -28,7 +28,7 @@ try {
             iklan();
         }, 5000);
         iklan();
-        //popup request menu
+        // popup request menu
         function requestmenu() {
             var Toast = Swal.mixin({
                 showClass: {
