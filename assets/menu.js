@@ -9,25 +9,25 @@ try {
         tag_battery_status = document.querySelector('small#battery_status');
         tag_battery_level = document.querySelector('span#battery_level');
         tag_netinfo = document.querySelector('#informationnet');
-        //iklan
-        // iklanPending = true;
-        // function iklan() {
-        //     if (iklanPending) {
-        //         iklanPending = false;
-        //         fetch('https://hadi-api.herokuapp.com/iklan/fikri_am').then(resp => resp.json()).then(resp => {
-        //             document.querySelector('#iklan_body').innerHTML = `<a target="_blank" style="color: white;" href="https://m.youtube.com/watch?v=${RegExp("/vi/(.*?)/").exec(resp.thumbnail)[1]}"><img alt="Subscribe Fikri Am" style="max-width: 100%" src="${resp.thumbnail}">
-		// 			<br>
-		// 			${resp.title}<br>
-		// 			<small>${resp.published}</small>
-		// 			</a>`; iklanPending = true;
-        //             // console.log(resp)
-        //         });
-        //     }
-        // }
-        // repeatiklan = setInterval(() => {
-        //     iklan();
-        // }, 5000);
-        // iklan();
+        iklan
+        iklanPending = true;
+        function iklan() {
+            if (iklanPending) {
+                iklanPending = false;
+                fetch('/iklan/gilangdev').then(resp => resp.json()).then(resp => {
+                    document.querySelector('#iklan_body').innerHTML = `<a target="_blank" style="color: white;" href="https://m.youtube.com/watch?v=${RegExp("/vi/(.*?)/").exec(resp.thumbnail)[1]}"><img alt="Subscribe Fikri Am" style="max-width: 100%" src="${resp.thumbnail}">
+					<br>
+					${resp.title}<br>
+					<small>${resp.published}</small>
+					</a>`; iklanPending = true;
+                    // console.log(resp)
+                });
+            }
+        }
+        repeatiklan = setInterval(() => {
+            iklan();
+        }, 5000);
+        iklan();
         //popup request menu
         function requestmenu() {
             var Toast = Swal.mixin({
